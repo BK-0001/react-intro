@@ -13,7 +13,8 @@ export function ChildForProfile({ name, age, alt, img }: Props) {
   }
 
   return (
-    <>
+    <div className="">
+      {/* <div>hello</div> */}
       <h3>{name}</h3>
       <h3>{age}</h3>
       {img ? (
@@ -33,6 +34,6 @@ export function ChildForProfile({ name, age, alt, img }: Props) {
           />
         </div>
       )}
-    </>
+    </div>
   );
 }
