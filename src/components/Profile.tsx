@@ -1,13 +1,15 @@
 type Props = {
   name: string;
   age: number;
-  img: string;
+  img?: string;
   alt: string;
 };
 
 export function ChildForProfile({ name, age, alt, img }: Props) {
+  // what do I do if some data are not existing?
+
   return (
-    <div>
+    <>
       <h3>{name}</h3>
       <h3>{age}</h3>
       <div style={{ width: 40, height: 40 }}>
@@ -17,6 +19,6 @@ export function ChildForProfile({ name, age, alt, img }: Props) {
           alt={alt}
         />
       </div>
-    </div>
+    </>
   );
 }
